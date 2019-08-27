@@ -7,7 +7,7 @@ from statistics import mean
 start_time = time.time()
 
 # Setup Chrome window
-driver = webdriver.Chrome("C:/TurboScraper/Project TurboScraper/chromedriver.exe")
+driver = webdriver.Chrome("chromedriver.exe")
 
 def ing():
        
