@@ -3,7 +3,7 @@ Various Python scraping scripts that use selenium to obtain data for leveraged p
 
 ## Overview
 
-- This repository contains five different web scraping scripts that obtain data from five leveraged product providers and subsequently update that data in a database
+- This repository contains five different web scraping scripts that obtain leveraged product data from five product providers and subsequently update that data in a database
 - The scripts use SQL and the following (external) Python packages/dependencies, read the documentation for the correct use of the packages:
     - [selenium](https://selenium-python.readthedocs.io/) (web scraping package)
     - [pyodbc](https://github.com/mkleehammer/pyodbc/wiki) (database connection package)
