@@ -1,12 +1,3 @@
-################################
-#                              #
-#         Kempen & Co.         #
-#      Turbo scraper tool      #
-# Creator: Olivier Kraaijeveld #
-#           July 2019          #
-#                              #
-################################
-
 # Import packages and setup time
 from selenium import webdriver
 import pandas as pd
