@@ -7,7 +7,7 @@ from statistics import mean
 start_time = time.time()
 
 # Setup Chrome window
-driver = webdriver.Chrome("C:/TurboScraper/Project TurboScraper/chromedriver.exe")
+driver = webdriver.Chrome("chromedriver.exe")
 
 def bnp_paribas():
     driver.set_window_size(1500,1920)
@@ -138,9 +138,9 @@ def bnp_paribas():
 
 # Setting up logfile
 try:
-    logf = open("K:/Trading/Matlab Executables/TurboScraper/logfile_bnpparibas.log", "a")
+    logf = open("logfile_bnpparibas.log", "a")
 except:
-    logf = open("K:/Trading/Matlab Executables/TurboScraper/logfile_bnpparibas.log", "w")
+    logf = open("logfile_bnpparibas.log", "w")
     
 time_cur = datetime.datetime.now().strftime('%d-%m-%Y %H:%M:%S')
 logf.write(str(time_cur) + "\n")
