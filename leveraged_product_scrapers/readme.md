@@ -1,17 +1,27 @@
 # Leveraged product scrapers
-Various Python scraping scripts that use selenium to obtain data for leveraged products from the most established providers
+Various Python scraping scripts that use selenium to obtain data for leveraged products from the most established providers.
 
 ## Overview
 
-- This repository contains five different web scraping scripts that obtain data from five leveraged product providers
-- The scripts use the [selenium](https://selenium-python.readthedocs.io/) package in Python, read the documentation for the correct use of the package
-- Each script currently collects the data for the following stocks:
+- This repository contains five different web scraping scripts that obtain data from five leveraged product providers and subsequently update that data in a database
+- The scripts use the following packages:
+  - Python:
+    - [selenium](https://selenium-python.readthedocs.io/) package in Python, read the documentation for the correct use of the package
+- Data is collected from the following providers:
+  - ING
+  - BNP Paribas
+  - Citigroup
+  - Commerzbank
+  - Goldman Sachs
+- Each script currently collects the data for the following stocks (with accompanying Bloomberg Terminal ticker):
   - Adyen (ADYEN NA Equity)
-  - AMG 
-  - BAM
-  - BE Semiconductor Industries
-  - Fugro
-  - Pharming
-  - Randstad
-  - TomTom
-  - Galapagos
+  - AMG (AMG NA Equity)
+  - BAM (BAMNB NA Equity)
+  - BE Semiconductor Industries (BESI NA Equity)
+  - Fugro (FUR NA Equity)
+  - Pharming (PHARM NA Equity)
+  - Randstad (RAND NA Equity)
+  - TomTom (TOM2 NA Equity)
+  - Galapagos (GLPG NA Equity)
+- For each stock, the following variables are scraped and written to a database. The primary key in the database is the ISIN, where new ISINS are
+- Each script is designed to run at a fixed period and therefore logs its behavior in a logfile
