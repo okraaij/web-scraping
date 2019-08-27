@@ -7,7 +7,7 @@ from statistics import mean
 start_time = time.time()
 
 # Setup Chrome window
-driver = webdriver.Chrome("C:/TurboScraper/Project TurboScraper/chromedriver.exe")
+driver = webdriver.Chrome("chromedriver.exe")
 
 def commerzbank():
     commerzbanktickers = {'ADYEN NA': 'adyen nv', 'AMG NA': 'amg', 'BAMNB NA': 'bam groep nv', 'BESI NA': 'be semiconductor industries nv', 'FUR NA': 'fugro', 'PHARM NA': 'pharming group nv', 'PNL NA': 'postnl n.v.', 'RAND NA': 'randstad nv', 'TOM2 NA': 'tomtom', 'GLPG NA': 'galapagos nv'}
@@ -129,9 +129,9 @@ def commerzbank():
 
 # Setting up logfile
 try:
-    logf = open("K:/Trading/Matlab Executables/TurboScraper/logfile_commerzbank.log", "a")
+    logf = open("logfile_commerzbank.log", "a")
 except:
-    logf = open("K:/Trading/Matlab Executables/TurboScraper/logfile_commerzbank.log", "w")
+    logf = open("logfile_commerzbank.log", "w")
     
 time_cur = datetime.datetime.now().strftime('%d-%m-%Y %H:%M:%S')
 logf.write(str(time_cur) + "\n")
