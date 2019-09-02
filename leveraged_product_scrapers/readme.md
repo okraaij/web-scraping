@@ -8,7 +8,7 @@ Various Python scraping scripts that use selenium to obtain data for leveraged p
     - [selenium](https://selenium-python.readthedocs.io/) (web scraping package)
     - [pyodbc](https://github.com/mkleehammer/pyodbc/wiki) (database connection package)
 - A separate price_correction.py script ensures that all the scraped prices for each stock are normalised by taking the mean price  
-- The primary key in the database is the ISIN, where new ISINS are added as new rows and existing ISINs are updated. The script also updates whether the leveraged product is currently active. 
+- The primary key in the database is the ISIN, where new ISINS are added as new rows and existing ISINs are updated. The script also updates whether the leveraged product is currently active or not
 - Each script is designed to be triggered by a .bat file to start at a fixed period through Windows Task Scheduler and therefore logs its behavior in a logfile
 - Data is collected from the following providers:
   - [ING](https://www.ingsprinters.nl/)
