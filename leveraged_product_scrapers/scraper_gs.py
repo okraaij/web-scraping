@@ -1,3 +1,11 @@
+##################################
+#                                #
+#   Leveraged product scrapers   #
+#             oliverk1           #
+#            July  2019          #
+#                                #
+##################################
+
 # Import packages and setup time
 from selenium import webdriver
 import pandas as pd
