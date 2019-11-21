@@ -6,4 +6,4 @@ Various scraping scripts that use selenium to obtain data for leveraged products
 
 ## [Forum scraper](/forum_scraper)
 
-Selenium-based web scraper that (1) tracks the frequency of certain words per month to observe trends and (2) extracts all URLs from the past X number of days
+Selenium-based web scraper that (1) tracks the frequency of certain words per month to observe trends and (2) extracts all URLs from the past X number of days. Forum used is http://www.iex.nl
