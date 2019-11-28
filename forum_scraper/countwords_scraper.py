@@ -38,5 +38,4 @@ result = result.T
 # Set columns and month as index
 result.columns = ['Month','Overname','Overnamekandidaat','Overgenomen']
 result.set_index('Month')
-
 display(result)
