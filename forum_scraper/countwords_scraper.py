@@ -3,6 +3,7 @@ import pandas as pd
 from selenium import webdriver
 
 # Initiate values and driver
+
 ov = 0
 ovk = 0
 og = 0
